@@ -1,0 +1,14 @@
+h1 {
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+h2 {
+    text-transform: lowercase;
+    font-weight: normal;
+    }
+
+h3 {
+    text-transform: UPPERCASE;
+    font-weight: normal;
+}

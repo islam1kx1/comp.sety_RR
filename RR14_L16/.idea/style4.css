@@ -1,0 +1,30 @@
+body {
+    line-height: 2;
+}
+p1 {
+text-decoration: underline;
+    font-weight: normal;
+}
+
+p2 {
+text-decoration: overline;
+    font-weight: normal;
+}
+
+p3 {
+text-decoration: line-through;
+    font-weight: normal;
+}
+
+p4 {
+text-decoration: underline line-through;
+    font-weight: normal;
+}
+
+p5 {
+a {
+text-decoration: none;
+
+}
+    font-weight: normal;
+}

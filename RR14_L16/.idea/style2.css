@@ -1,0 +1,10 @@
+body {
+    line-height: 1.2;
+}
+
+p::first-letter {
+    font-family: Arial;
+    color: red;
+    font-size: 25px;
+    font-weight: normal;
+}
