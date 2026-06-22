@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    .circleRed {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    width: 100px;
+        position: relative;
+        top: 100px;
+        left: 150px;
+    }
+    .circleYellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 100px;
+        position: relative;
+        top: 2px;
+        left: 10px;
+    }
+    .circleGreen {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    width: 100px;
+        position: relative;
+        bottom: 100px;
+        left: 300px;
+    }
+    .divbtn{
+        position: relative;
+        left: 100px;
+        top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="divbtn">
+    <button id="redBtn">Красный</button>
+    <button id="yellowBtn">Желтый</button>
+    <button id="greenBtn">Зеленый</button>
+</div>
+<div class="circleRed"></div>
+<div class="circleYellow"></div>
+<div class="circleGreen"></div>
+
+<script>
+    let circleRed = document.querySelector(".circleRed");
+    let circleYellow = document.querySelector(".circleYellow");
+    let circleGreen = document.querySelector(".circleGreen");
+
+    let redBtn = document.querySelector("#redBtn");
+    let yellowBtn = document.querySelector("#yellowBtn");
+    let greenBtn = document.querySelector("#greenBtn");
+
+function resetAll() {
+    circleRed.style.backgroundColor = "red";
+    circleYellow.style.backgroundColor = "yellow";
+    circleGreen.style.backgroundColor = "green";
+}
+
+    redBtn.onclick = function(){
+    resetAll();
+    circleYellow.style.backgroundColor = "gray"
+    circleGreen.style.backgroundColor = "gray"
+    };
+    yellowBtn.onclick = function(){
+    resetAll();
+    circleGreen.style.backgroundColor = "gray"
+    circleRed.style.backgroundColor = "gray"
+    }
+    greenBtn.onclick = function(){
+    resetAll();
+    circleYellow.style.backgroundColor = "gray"
+    circleRed.style.backgroundColor = "gray"
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" name="name1">
+<input type="number" name="name2">
+<button id="btn">Сложить</button>
+<p id="summ"></p>
+<script>
+    let a = document.querySelector('[name="name1"]');
+    let b = document.querySelector('[name="name2"]');
+    let button = document.querySelector("#btn");
+    let summ = document.querySelector("#summ");
+    button.onclick = function(){
+    let x = Number(a.value) + Number(b.value);
+    summ.textContent = "Сумма: " + x;
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+table{
+border: 4px double;
+border-collapse:collapse;
+width: 37%;
+}
+
+tr, td{
+text-align: center;
+border: 2px solid gray;
+}
+
+th, td{
+text-align: left;
+}
+th{
+font-weight: normal;
+}
+.bold td{
+font-weight: bold;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Случайный фон</title>
+    <style>
+        body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        }
+
+        button {
+            font-size: 24px;
+            background: white;
+            border: 3px solid #333;
+        }
+    </style>
+</head>
+<body>
+<button id="randomBtn">Случайный фон</button>
+<script>
+    document.getElementById('randomBtn').onclick = function() {
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        document.body.style.backgroundColor = "rgb(" + r + ", " + g + ", " + b + ")";
+    };
+</script>
+</body>
+</html>

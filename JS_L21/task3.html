@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Проверка телефона</title>
+</head>
+<body>
+<h2>Проверка номера телефона</h2>
+<input type="text" id="phone" placeholder="Введите номер телефона">
+<button id="btn">Проверить</button>
+<p id="result"></p>
+
+<script>
+    let input = document.querySelector("#phone");
+    let button = document.querySelector("#btn");
+    let output = document.querySelector("#result");
+
+    function isValidPhone(phone) {
+        if (phone === "") {
+            return "Номер не может быть пустым";
+        }
+
+        let cleaned = phone;
+        let hasPlus = false;
+
+        if (cleaned[0] === "+") {
+            hasPlus = true;
+            cleaned = cleaned.slice(1);
+        }
+
+        for (let i = 0; i < cleaned.length; i++) {
+            if (cleaned[i] < "0" || cleaned[i] > "9") {
+                return "Номер содержит недопустимые символы";
+            }
+        }
+
+        let len = cleaned.length;
+
+        if (hasPlus) {
+            if (len === 11 && cleaned[0] === "7") {
+                return "ok";
+            } else {
+                return "Номер должен быть в формате +7XXXXXXXXXX";
+            }
+        } else {
+            if (len === 11 && cleaned[0] === "8") {
+                return "ok";
+            } else if (len === 10) {
+                return "ok";
+            } else {
+                return "Номер должен содержать 10 цифр или начинаться с 8";
+            }
+        }
+    }
+
+    button.onclick = function() {
+        let phone = input.value;
+        let result = isValidPhone(phone);
+
+        if (result === "ok") {
+            output.textContent = "Номер телефона верный!";
+        } else {
+            output.textContent = result;
+
+        }
+    };
+</script>
+</body>
+</html>

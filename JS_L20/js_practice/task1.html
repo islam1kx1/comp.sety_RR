@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="name" placeholder="Введите ваше имя">
+<button id="btn" >Сказать привет</button>
+<p id="abz"></p>
+
+<script>
+    let title = document.querySelector("#abz");
+    let button = document.querySelector("#btn");
+    let string = document.querySelector('[name="name"]');
+
+    button.onclick = function(){
+        if (string.value !== ""){
+            title.textContent = "Привет," + string.value + "! Добро пожаловать на сайт";
+        }else{
+        title.textContent = "Вы не ввели имя";
+        }
+    };
+</script>
+</body>
+</html>

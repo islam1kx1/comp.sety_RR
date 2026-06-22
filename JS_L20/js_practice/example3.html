@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1 id="click">
+    Кликни!!
+</h1>
+<button id="btn">Клик</button>
+<script>
+    let title = document.querySelector("#click");
+    let textBtn = document.querySelector("#btn");
+
+    textBtn.onclick=function(){
+    title.textContent = "Клик сработал!";
+    title.style.color = "blue";
+    };
+</script>
+</body>
+</html>

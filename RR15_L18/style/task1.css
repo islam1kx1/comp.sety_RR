@@ -1,0 +1,22 @@
+table{
+border: 2px solid black;
+border-collapse:collapse;
+width: 80%;
+
+}
+tr, td{
+text-align: center;
+border: 2px solid gray;
+}
+
+.header-row td {
+background-color: red;
+color: white;
+}
+
+th{
+text-align: left;
+color: white;
+background-color: #009999;
+font-weight: 100;
+}

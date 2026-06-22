@@ -1,0 +1,36 @@
+table{
+border-collapse:collapse;
+width: 70%;
+font-family: Lucida Sans Unicode, sans-serif;
+border: 1px solid black;
+}
+
+tr,td{
+border: 1px solid black;
+ border-bottom: 3px solid #0be052;
+}
+
+th{
+color: #fff;
+background-color: #2a58ea;
+}
+
+td{
+color: #669;
+}
+
+.top th {
+border: none;
+    border-bottom: 3px solid #6678b1;
+}
+.chet {
+    background-color: #e8edff;
+}
+
+.nechet {
+    background-color: #b9c6f7;
+}
+
+tr:hover td{
+color: #ea2a36;
+}

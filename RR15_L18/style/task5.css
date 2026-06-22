@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid red;
+    width:15%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+th, td {
+    border: 2px solid #6E0606;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #6E0606;
+    font-weight: bold;
+}
+
+td {
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+td:first-child {
+    color: white;
+    font-weight: bold;
+}
+
+th {
+    color: white;
+    font-weight: bold;
+    font-size:16px
+}
+.blue td{
+font-weight: bold;
+background-color: #090F89;
+}
